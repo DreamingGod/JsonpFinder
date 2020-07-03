@@ -9,6 +9,21 @@
 
 - 精准匹配：录入检测信息字段+精准字段返回检测
 
+keyUrl与KeyRegular为一一对应获取精准字段，需浏览器登录指定域
+
+例：
+```
+var keyUrl = {
+  0: 'https://vip.qq.com/my/index.html?ADTAG=vip.qq.com/my/index.html', //qq昵称
+  ...
+};
+
+var KeyRegular = {
+  0: '<span class="ui-navbar-status-username">(\\\S*)<\\\/span>', //qq昵称
+  ...
+};
+```
+
 ### 使用
 - 单独使用版本-Client: 
 当发现精准jsonp及模糊jsonp时，会弹窗，点击窗口可直接复制url (chrome开通通知)
