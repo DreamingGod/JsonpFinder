@@ -1,0 +1,35 @@
+{
+    "description": "by imanfeng",
+    "manifest_version": 2,
+    "name": "JsonpFinder",
+    "version": "0.2",
+
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "contextMenus",
+        "cookies",
+        "notifications",
+        "http://*/*",
+        "https://*/*"
+    ],
+
+      "icons": 
+    { 
+      "16": "icon16.png",             
+      "48": "icon16.png",            
+      "128": "icon128.png" 
+    },  
+
+    "browser_action": {
+       "default_icon": "icon16.png"
+    },
+
+    "background": {
+        "scripts": [
+            "jquery-1.7.2.min.js",
+            "background.js",
+            "base64.js"
+        ]
+    }
+}
