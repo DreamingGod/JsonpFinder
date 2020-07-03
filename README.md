@@ -22,9 +22,9 @@
 
 - 精准匹配：录入检测信息字段+精准字段返回检测
 
-keyUrl与KeyRegular为一一对应需要获取指定域的精准字段，当用户在登录过作用域且Cookie未时效会保存用于精准字段返回检测
+keyUrl与KeyRegular为一一对应需要获取指定域的精准字段
 
-例：想找能打到qq昵称的Jsonp，登录qq作用域插件会自动录入qq昵称用于后面的自动挖掘，也可以直接更改为固定敏感字段
+例：想找能打到qq昵称的Jsonp，登录qq作用域插件会自动录入qq昵称用于后面的自动挖掘（也可以直接修改代码更改固定敏感字段），当检测到返回数据中包含qq昵称且url中没有token等校验字段的jsonp请求就判断为精准
 ```
 var keyUrl = {
   0: 'https://vip.qq.com/my/index.html?ADTAG=vip.qq.com/my/index.html', //qq昵称
